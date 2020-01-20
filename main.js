@@ -29,6 +29,7 @@ function guessCheck(){
 
     if(userGuess === secretNumber){
         isCorrect.textContent = 'Correct!';
+        isCorrect.style.backgroundColor = 'greenyellow';
         gameOver();
     } else if(guessCount === 10){
         isCorrect.textContent = 'GAME OVER!!';
@@ -36,6 +37,7 @@ function guessCheck(){
 
     } else{
         isCorrect.textContent = 'False!';
+        isCorrect.style.backgroundColor = 'red';
         if(userGuess < secretNumber){
             hint.textContent = 'too low';
         }else{
@@ -56,6 +58,7 @@ function guessCheck(){
         newGameBtn = document.createElement('button');
         newGameBtn.textContent = 'Start New Game';
         document.body.appendChild(newGameBtn);
+        newGameBtn.style.position ='center';
         newGameBtn.addEventListener('click',resetGame);
     }
     function resetGame(){

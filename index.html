@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +13,28 @@
 <body>
     <div class="container">
         <h1>Number guessing game</h1>
-        <div id ="rule">
-            <h3>We have selected a random number between 1 and 100. see if you can guess it 
-            in 10 terns or less. We'll tell you if you guess was too high or too low.</h3>
+        <div class="rule">
+            <h3 class="rule">We have selected a random number between 1 and 100. see if you can guess it
+                in 10 terns or less. We'll tell you if you guess was too high or too low.</h3>
         </div>
 
-        <h4>Enter a guess : </h4>
-        <input type="number" id="guessField" >
+        <h4>Enter a guess </h4>
+        <input type="number" id="guessField">
 
         <div id="buttonArea">
-            <button type="submit" class = "guessSubmit" > Submit </button>
+            <button type="submit" class="guessSubmit"> Submit </button>
         </div>
-        
 
         <div id="resultArea">
-            
             <p id="historyList"> </p>
             <p id="isCorrect"></p>
             <p id="hint"></p>
         </div>
 
-        
     </div>
 
     <script src="main.js"></script>
 </body>
+
+
 </html>
